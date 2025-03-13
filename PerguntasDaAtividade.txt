@@ -1,0 +1,72 @@
+Nome Do Grupo: GitDaVelha
+
+Tema do Grupo: Jogo da Velha que é jogado por commits
+
+Objetivo do Grupo: O objetivo era criar um jogo da velha que fosse jogado por commits via Git
+
+Definição de Ferramentas: VsCode, Git e Github (Desenvolvimento)
+			  Discord - (Comunicação)
+
+Detalhamento da Atividade: Feito em dupla
+Enzo Pelakoski Cavinato
+Guilherme de Freitas Fracasso
+
+
+
+- Passo a Passo de como foi feito
+
+1 - Criar o Repositório Git
+	Primeiro, crie um diretório para o jogo da velha em seu computador e inicialize o repositório Git 
+	dentro dele. Exemplo:
+
+		mkdir Tabuleiro
+		cd Tabuleiro
+		git init
+
+2 - Criar o Arquivo com o Tabuleiro Inicial
+	1. Crie um arquivo chamado JogoDaVelha.txt, onde o estado do jogo será armazenado.
+	2. Abra o arquivo jogo.txt e insira o tabuleiro vazio, representando as posições do jogo:
+		
+		__|__|__
+		__|__|__
+		  |  |
+
+3 - Fazer o Commit Inicial
+	Agora, adicione o arquivo ao repositório Git e faça o commit inicial para registrar o estado inicial
+	do jogo. Exemplo:
+		
+		git add JogoDaVelha.txt
+		git commit -m "Primeira Jogada"
+
+
+
+-- Durante o Jogo
+	
+	Primeira Jogada de Enzo (O)
+		1. Enzo escolhe a posição 5 e faz a jogada:
+
+		__|__|__
+		__|🔵|__
+		  |  |
+
+
+		2. Enzo faz o commit da sua jogada:
+		
+			git add JogoDaVelha.txt
+			git commit -m "Primeira Jogada"
+
+	
+	Primeira Jogada de Guilherme (O)
+		1. Guilherme escolhe a posição 6 e faz a jogada:
+
+		__|__|__
+		__|🔵|❌
+		  |  |
+
+		2. Guilherme faz o commit da sua jogada:
+		
+			git add JogoDaVelha.txt
+			git commit -m "Segunda Jogada"
+
+
+Assim, seguindo este loop até o jogo se encerrar.
