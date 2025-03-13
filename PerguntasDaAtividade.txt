@@ -2,18 +2,19 @@ Nome Do Grupo: GitDaVelha
 
 Tema do Grupo: Jogo da Velha que é jogado por commits
 
-Objetivo do Grupo: O objetivo era criar um jogo da velha que fosse jogado por commits via Git
+Objetivo do Grupo: O objetivo era criar um jogo da velha que fosse jogado por commits via Git (usando pull e push)
 
 Definição de Ferramentas: VsCode, Git e Github (Desenvolvimento)
 			  Discord - (Comunicação)
 
-Detalhamento da Atividade: Feito em dupla
-Enzo Pelakoski Cavinato
-Guilherme de Freitas Fracasso
+Detalhamento da Atividade: Feito em dupla por
+- Enzo Pelakoski Cavinato
+- Guilherme de Freitas Fracasso
 
-
+______________________________________________________________________________________________________________________________________________________________________________
 
 - Passo a Passo de como foi feito
+
 
 1 - Criar o Repositório Git
 	Primeiro, crie um diretório para o jogo da velha em seu computador e inicialize o repositório Git 
@@ -23,13 +24,15 @@ Guilherme de Freitas Fracasso
 		cd Tabuleiro
 		git init
 
+
 2 - Criar o Arquivo com o Tabuleiro Inicial
 	1. Crie um arquivo chamado JogoDaVelha.txt, onde o estado do jogo será armazenado.
-	2. Abra o arquivo jogo.txt e insira o tabuleiro vazio, representando as posições do jogo:
+	2. Abra o arquivo JogoDaVelha.txt e insira o tabuleiro vazio, representando as posições do jogo:
 		
 		__|__|__
 		__|__|__
 		  |  |
+
 
 3 - Fazer o Commit Inicial
 	Agora, adicione o arquivo ao repositório Git e faça o commit inicial para registrar o estado inicial
@@ -43,30 +46,32 @@ Guilherme de Freitas Fracasso
 -- Durante o Jogo
 	
 	Primeira Jogada de Enzo (O)
-		1. Enzo escolhe a posição 5 e faz a jogada:
+		1. Enzo escolhe a posição 5 (Edita o Tabuleiro) e faz a jogada (Usa o push):
 
-		__|__|__
-		__|🔵|__
-		  |  |
+			__|__|__
+			__|🔵|__
+			  |  |
 
-
-		2. Enzo faz o commit da sua jogada:
-		
 			git add JogoDaVelha.txt
 			git commit -m "Primeira Jogada"
+			git push origin main
 
 	
+	
 	Primeira Jogada de Guilherme (O)
-		1. Guilherme escolhe a posição 6 e faz a jogada:
+		1 - Guilherme começa com um pull para atualizar o jogo
+			git pull origin main
 
-		__|__|__
-		__|🔵|❌
-		  |  |
+		2. Guilherme escolhe a posição 6 (Edita o Tabuleiro) e faz a jogada (Usa o push):
 
-		2. Guilherme faz o commit da sua jogada:
-		
+			__|__|__
+			__|🔵|❌
+			  |  |
+
 			git add JogoDaVelha.txt
 			git commit -m "Segunda Jogada"
+			git push origin main
 
 
-Assim, seguindo este loop até o jogo se encerrar.
+O jogo continua com cada jogador editando JogoDaVelha.txt, fazendo commits e enviando (push) suas jogadas. 
+Seguindo este loop até o jogo se encerrar.
